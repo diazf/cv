@@ -23,9 +23,9 @@ You should not store this in the same directory that you build your CV.
 
 The `bibliography` section of your JSON file should just be a lists of the citation keys in your BibTeX library.  Within each bibliographic section, citations will preserve the order in the JSON file.  
 
-### Edit Makefile
+### Edit `Makefile`
 
-Replace `BIB` definition with the basename of the BibTex library.
+Replace `BIB` definition with the basename of the BibTex library. It should be same as in the previous section.
 
 ## Notes
 
