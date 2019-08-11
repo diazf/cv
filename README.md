@@ -1,5 +1,5 @@
 # Curriculum Vitae
-![cv image](https://github.com/diazf/cv/cv.png)
+![cv image](https://github.com/diazf/cv/raw/master/cv.png)
 
 Package to render CV. 
 
