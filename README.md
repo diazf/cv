@@ -27,6 +27,10 @@ The `bibliography` section of your JSON file should just be a lists of the citat
 
 Replace `BIB` definition with the basename of the BibTex library. It should be same as in the previous section.
 
+### Run `make`
+
+Build the CV in the same directory as `Makefile` and everything else.  Your CV will be in `cv.pdf`.
+
 ## Notes
 
 I've tried to include checks in case you don't want some of the sections I have.
