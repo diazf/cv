@@ -14,9 +14,20 @@ Package to render CV.
 
 ## Instructions
 
+### Edit `cv.json`
+
 Replace `cv.json` with your CV information.  
 
-The value for `bib` should be basename of the BibTeX library that includes all of your citations.  Your bibliography should just be a lists of the citation keys in your BibTeX library.  Within each bibliographic section, citations will preserve the order in the JSON file.  
+The value for `bib` should be basename of the BibTeX library that includes all of your citations.  My current setup has this file in some other directory, assuming you, like I, have a big BibTeX file that happens to contain your own bibliography in addition to everything else.  Make sure this file is in your `BIBINPUTS` environment variable.  
+You should not store this in the same directory that you build your CV.
+
+The `bibliography` section of your JSON file should just be a lists of the citation keys in your BibTeX library.  Within each bibliographic section, citations will preserve the order in the JSON file.  
+
+### Edit Makefile
+
+Replace `BIB` definition with the basename of the BibTex library.
+
+## Notes
 
 I've tried to include checks in case you don't want some of the sections I have.
 
