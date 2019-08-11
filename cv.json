@@ -530,119 +530,119 @@
 			{
 				"venue":"SIGIR",
 				"title":"General Co-Chair",
-				"years":[2021]
+				"year":[2021]
 			},
 			{
 				"venue":"TREC Fair Ranking Track",
 				"title":"Co-Organizer",
-				"years":[2019]
+				"year":[2019]
 			},
 			{
 				"venue":"CIFAR Workshop on AI and the Curation of Culture",
 				"title":"Co-Organizer",
-				"years":[2019]
+				"year":[2019]
 			},
 			{
 				"venue":"FAT*",
 				"title":"Program Co-Chair",
-				"years":[2019]
+				"year":[2019]
 			},
 			{
 				"venue":"Strategic Workshop on Information Retrieval in Lorne",
 				"title":"Co-Organizer",
-				"years":[2018]
+				"year":[2018]
 			},
 			{
 				"venue":"SIGIR",
 				"title":"Awards Chair",
-				"years":[2014,2015,2016]
+				"year":[2014,2015,2016]
 			},
 			{
 				"venue":"SIGIR Forum",
 				"title":"Editor",
-				"years":[2012,2013,2014]
+				"year":[2012,2013,2014]
 			},
 			{
 				"venue":"Workshop on Social Web for Disaster Management",
 				"title":"Co-Organizer",
-				"years":[2015, 2016]
+				"year":[2015, 2016]
 			},
 			{
 				"venue":"WSDM",
 				"title":"General Co-Chair",
-				"years":[2014]
+				"year":[2014]
 			},
 			{
 				"venue":"TREC Web Track",
 				"title":"Co-Organizer",
-				"years":[2013,2014]
+				"year":[2013,2014]
 			},
 			{
 				"venue":"TREC Temporal Summarization Track",
 				"title":"Co-Organizer",
-				"years":[2013,2014]
+				"year":[2013,2014]
 			},
 			{
 				"venue":"NTCIR Recipe Search Track",
 				"title":"Co-Organizer",
-				"years":[2014]
+				"year":[2014]
 			},
 			{
 				"venue":"SIGIR Workshop on Time-aware Information Access",
 				"title":"Co-Organizer",
-				"years":[2012, 2013, 2014]
+				"year":[2012, 2013, 2014]
 			},
 			{
 				"venue":"SIGIR Workshop on Social Web Search and Mining: Analysis of User Generated Content Under Crisis",
 				"title":"Co-Organizer",
-				"years":[2011]
+				"year":[2011]
 			}
 		],
 		"reviewing":[
 			{
 				"venue":"SIGIR",
-				"role":"SPC",
-				"years":[2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
+				"title":"SPC",
+				"year":[2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
 			},
 			{
 				"venue":"SIGIR",
-				"role":"PC",
-				"years":[2008,2009,2010]
+				"title":"PC",
+				"year":[2008,2009,2010]
 			},
 			{
 				"venue":"CIKM",
-				"role":"PC",
-				"years":[2010,2011,2014]
+				"title":"PC",
+				"year":[2010,2011,2014]
 			},
 			{
 				"venue":"CIKM",
-				"role":"SPC",
-				"years":[2012]
+				"title":"SPC",
+				"year":[2012]
 			},
 			{
 				"venue":"CIKM",
-				"role":"Vice Chair",
-				"years":[2009]
+				"title":"Vice Chair",
+				"year":[2009]
 			},
 			{
 				"venue":"WSDM",
-				"role":"PC",
-				"years":[2010,2011]
+				"title":"PC",
+				"year":[2010,2011]
 			},
 			{
 				"venue":"WSDM",
-				"role":"SPC",
-				"years":[2012,2013,2014,2015,2016,2017,2018]
+				"title":"SPC",
+				"year":[2012,2013,2014,2015,2016,2017,2018]
 			},
 			{
 				"venue":"WWW",
-				"role":"PC",
-				"years":[2011,2012,2013,2014]
+				"title":"PC",
+				"year":[2011,2012,2013,2014]
 			},
 			{
 				"venue":"WWW",
-				"role":"Track Chair",
-				"years":[2017]
+				"title":"Track Chair",
+				"year":[2017]
 			}
 		]
 	},

@@ -181,14 +181,14 @@ def printService(X):
     if "organization" in X:
         print("\\noindent\\textbf{Organization}\\\\")
         for x in X["organization"]:
-            years = sequenceToRanges(x["years"])
+            years = sequenceToRanges(x["year"])
             print("%s, %s, %s\\\\"%(x["venue"],x["title"],years))
         print("\n\n")
     if "reviewing" in X:
         print("\\noindent\\textbf{Reviewing}\\\\")
         for x in X["reviewing"]:
-            years = sequenceToRanges(x["years"])
-            print("%s, %s, %s\\\\"%(x["venue"],x["role"],years))
+            years = sequenceToRanges(x["year"])
+            print("%s, %s, %s\\\\"%(x["venue"],x["title"],years))
     print("\n\n")
                     
 def printSkills(X):
