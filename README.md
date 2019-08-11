@@ -10,6 +10,6 @@ Package to render CV.
 * [make][https://www.gnu.org/software/make/]
 * and a bunch of latex packages
 
-## Instuctions
+## Instructions
 
 Replace `cv.json` with your CV information.  
