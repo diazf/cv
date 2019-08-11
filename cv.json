@@ -1,0 +1,657 @@
+{
+	"given-name":"Fernando",
+	"sur-name":"Diaz",
+	"bib":"fdiaz",
+	"degrees":[
+		{
+			"degree":"PhD",
+			"school":"University of Massachusetts Amherst",
+			"discipline":"Computer Science",
+			"year":2008,
+			"thesis":"Regularizing Query-Based Retrieval Scores",
+			"readers":[
+				"James Allan",
+				"W. Bruce Croft",
+				"Sridhar Mahadevan",
+				"John Staudenmayer"
+			]
+		},
+		{
+			"degree":"MS",
+			"school":"University of Massachusetts Amherst",
+			"discipline":"Computer Science",
+			"year":2004,
+			"thesis":"Browsing-Based User Language Models",
+			"readers":[
+				"James Allan"
+			]
+		},
+		{
+			"degree":"BS",
+			"school":"University of Michigan Ann Arbor",
+			"discipline":"Computer Science",
+			"year":1998
+		}
+	],
+	"academic-affiliation":[
+		{
+			"title":"Adjunct Professor",
+			"school":"McGill University",
+			"location":"Montréal, QC",
+			"start-year":2019,
+			"start-month":"January"
+		},
+		{
+			"title":"Adjunct Professor",
+			"school":"NYU Courant Institute of Mathematical Sciences",
+			"location":"New York, NY",
+			"start-year":2013,
+			"start-month":"January",
+			"end-year":2016,
+			"end-month":"December"
+		},
+		{
+			"title":"Adjunct Professor",
+			"school":"NYU Tandon School of Engineering",
+			"location":"New York, NY",
+			"start-year":2011,
+			"start-month":"January",
+			"end-year":2011,
+			"end-month":"May"
+		}
+	],
+	"employment":[
+		{
+			"title":"Assistant Research Director",
+			"affiliation":"Microsoft Research",
+			"location":"Montréal, QC",
+			"start-year":2018,
+			"start-month":"June",
+			"description":"I assist with the management of twenty five researchers focused on natural language processing, machine learning, and the societal impacts of artificial intelligence.  I directly lead a multidisciplinary research group focused on fairness, accountability, transparency, and ethics (FATE) of artificial intelligence systems.  The group externally publishes basic research and actively collaborates with engineering teams in Microsoft.  In addition, I maintain an active research agenda in core information retrieval and its application to production systems such as bing."
+		},		
+		{
+			"title":"Director of Research",
+			"affiliation":"Spotify",
+			"location":"New York, NY",
+			"start-year":2017,
+			"start-month":"March",
+			"end-year":2018,
+			"end-month":"May",
+			"description":"I led the applied research organization of twenty researchers focused on search, recommendation, metrics, and evaluation.  I helped define the company's research approach and culture, including how it interacts internally with product teams and externally with the academic community.  In addition, I was an active member of the recommendations leadership team, involved in strategic planning for a two year product roadmap."
+		},		
+		{
+			"title":"Senior Researcher",
+			"affiliation":"Microsoft Research",
+			"location":"New York, NY",
+			"start-year":2012,
+			"start-month":"May",
+			"end-year":2017,
+			"end-month":"March",
+			"description":"I led and participated in information retrieval research projects covering crisis informatics,  attention modeling, fairness in machine learning, text summarization, and deep learning for search.  These themes included extensive collaboration internally with product groups and externally with academic institutions. "
+		},		
+		{
+			"title":"Senior Research Scientist",
+			"affiliation":"Yahoo! Research",
+			"location":"New York, NY",
+			"start-year":2008,
+			"start-month":"January",
+			"end-year":2012,
+			"end-month":"March",
+			"description":"I led and participated in information retrieval research projects including federated search, time-sensitive web search, match-making systems, multi-document summarization, and modeling user mouse behavior.  My role balanced developing production code, technology transfer from research to applied research and engineering groups, and presentation of research results to the wider research community. "
+		},		
+		{
+			"title":"Visiting Fellow",
+			"affiliation":"Institute for Pure and Applied Mathematics",
+			"location":"Los Angeles, CA",
+			"start-year":2007,
+			"start-month":"September",
+			"end-year":2007,
+			"end-month":"December",
+			"description":"I was a visiting fellow at UCLA for the program in ``Mathematics of Knowledge and Search Engines''."
+		},		
+		{
+			"title":"Research Assistant",
+			"affiliation":"University of Massachusetts",
+			"location":"Amherst, MA",
+			"start-year":2001,
+			"start-month":"September",
+			"end-year":2007,
+			"end-month":"August",
+			"description":"Disseration research focused on information retrieval under the supervision of James Allan."
+		},		
+		{
+			"title":"Intern",
+			"affiliation":"Overture Research",
+			"location":"Pasadena, CA",
+			"start-year":2003,
+			"start-month":"June",
+			"end-year":2003,
+			"end-month":"December",
+			"description":"I collaborated with Dr. Rosie Jones to develop tools for the analysis and classification of search queries into temporal categories."
+		},		
+		{
+			"title":"Intern",
+			"affiliation":"Sony Computer Science Laboratories",
+			"location":"Tokyo, Japan",
+			"start-year":2001,
+			"start-month":"June",
+			"end-year":2001,
+			"end-month":"August",
+			"description":"As part of participation in the NSF Summer Institute in Japan, I worked with Dr. Hitoshi Iida and Dr. Koiti Hasida of Sony Computer Science Laboratories on the construction of a dialog-based information retrieval system."
+		},		
+		{
+			"title":"Research Assistant",
+			"affiliation":"University of Massachusetts",
+			"location":"Amherst, MA",
+			"start-year":2000,
+			"start-month":"September",
+			"end-year":2001,
+			"end-month":"May",
+			"description":"I collaborated with Professors Victor Lesser and Beverly Woolf on a project which leveraged information retrieval techniques in a distributed educational system. We developed a system to infer symbolic and planning primitives from statistical text analysis."
+		},		
+		{
+			"title":"Research Assistant",
+			"affiliation":"Bell \\& Howell Information and Learning",
+			"location":"Ann Arbor, MI",
+			"start-year":1999,
+			"start-month":"May",
+			"end-year":2000,
+			"end-month":"August",
+			"description":"I worked on the implementation of information retrieval research in a real world search system. Tasks included system design and engineering and statistical evaluation of system robustness."
+		}
+	],
+	"teaching":[
+		{
+			"title":"Web Search Engines",
+			"school":"New York University",
+			"semesters":["Spring 2013", "Fall 2014", "Fall 2016"],
+			"description":"Co-instructed a graduate level course on web search engines.  Classes consisted of lectures with evaluation based on homeworks, exams, and a final project."
+		},
+		{
+			"title":"Web Search",
+			"school":"Asian Summer School in Information Access",
+			"semesters":["Summer 2013"],
+			"description":"Graduate level lecture on web search engines."
+		},
+		{
+			"title":"Experimental Design for Information Systems",
+			"school":"University of Trento",
+			"semesters":["Summer 2012"],
+			"description":"Co-instructed a graduate level course on information retrieval and data mining.  Classes included a combination of lectures and paper discussion."
+		},
+		{
+			"title":"Advanced Information Retrieval and Databases",
+			"school":"New York University",
+			"semesters":["Spring 2011"],
+			"description":"Co-instructed a graduate level seminar on advanced information retrieval.  Classes included a combination of lectures and paper discussion."
+		},
+		{
+			"title":"Information Retrieval",
+			"school":"University of Massachusetts Amherst",
+			"semesters":["Fall 2006"],
+			"description":"Prepared slides and provided lectures for a graduate-level information retrieval course. Instructor: Professor James Allan."
+		},
+		{
+			"title":"Applied Information Theory",
+			"school":"University of Massachusetts Amherst",
+			"semesters":["Fall 2006"],
+			"description":"Provided grading support for a graduate-level information theory course. Instructor: Professor Erik Learned-Miller."
+		},
+		{
+			"title":"Databases",
+			"school":"University of Massachusetts Amherst",
+			"semesters":["Spring 2006"],
+			"description":"Provided teaching assistance for a graduate-level database course. This included grading home works, holding office hours, and maintaining a course web page. Instructors: Professors Yanlei Diao and Gerome Miklau."
+		}
+	],
+	"supervision":{
+		"interns":[
+			{
+				"name":"Jaime Arguello",
+				"year":[
+					2009,
+					2010
+				],
+				"title":"Associate Professor",
+				"affiliation":"University of North Carolina Chapel Hill"				
+			},
+			{
+				"name":"Ahmed Hassan",
+				"year":[
+					2009
+				],
+				"title":"Research Manager",
+				"affiliation":"Microsoft Research"				
+			},
+			{
+				"name":"Jangwon Seo",
+				"year":[
+					2010
+				],
+				"title":"Staff Software Engineer",
+				"affiliation":"Google"				
+			},
+			{
+				"name":"Qi Guo",
+				"year":[
+					2011
+				],
+				"title":"Software Engineer",
+				"affiliation":"Google"				
+			},
+			{
+				"name":"Matthew Ekstrand-Abeug",
+				"year":[
+					2013
+				],
+				"title":"Software Engineer",
+				"affiliation":"Google"				
+			},
+			{
+				"name":"Pavel Metrikov",
+				"year":[
+					2013
+				],
+				"title":"Data Scientist",
+				"affiliation":"Microsoft"				
+			},
+			{
+				"name":"Teresa Bracamonte",
+				"year":[
+					2013
+				],
+				"title":"Software Engineer",
+				"affiliation":"Equifax"				
+			},
+			{
+				"name":"Ioannis Paparrizos",
+				"year":[
+					2014
+				],
+				"title":"Postdoctoral Researcher",
+				"affiliation":"University of Chicago"				
+			},
+			{
+				"name":"Chris Kedzie",
+				"year":[
+					2015
+				],
+				"title":"PhD Student",
+				"affiliation":"Columbia University"				
+			},
+			{
+				"name":"David Abel",
+				"year":[
+					2015
+				],
+				"title":"PhD Student",
+				"affiliation":"Brown University"				
+			},
+			{
+				"name":"Rishabh Mehrotra",
+				"year":[
+					2016
+				],
+				"title":"Senior Research Scientist",
+				"affiliation":"Spotify"				
+			},
+			{
+				"name":"Cristina Garbacea",
+				"year":[
+					2016
+				],
+				"title":"PhD Student",
+				"affiliation":"University of Michigan"				
+			},
+			{
+				"name":"Jesse Anderton",
+				"year":[
+					2017
+				],
+				"title":"Research Scientist",
+				"affiliation":"Spotify"				
+			},
+			{
+				"name":"Daniel Cohen",
+				"year":[
+					2019
+				],
+				"title":"PhD Student",
+				"affiliation":"University of Massachusetts Amherst"				
+			},
+			{
+				"name":"Ashudeep Singh",
+				"year":[
+					2019
+				],
+				"title":"PhD Student",
+				"affiliation":"Cornell University"				
+			}
+		],
+		"reader":[
+			{
+				"name":"Jaime Arguello",
+				"year":2011,
+				"school":"Carnegie Mellon University"
+			},
+			{
+				"name":"Maria-Hendrike Peetz",
+				"year":2015,
+				"school":"University of Amsterdam"
+			},			
+			{
+				"name":"Matthew Ekstrand-Abeug",
+				"year":2017,
+				"school":"Northeastern University"
+			},			
+			{
+				"name":"Jesse Anderton",
+				"year":2019,
+				"school":"Northeastern University"
+			},			
+			{
+				"name":"Rodrigo Nogueira",
+				"year":2019,
+				"school":"New York University"
+			}
+		]
+	},
+	"bibliometrics":{
+		"acm":{
+			"id":"81551748956",
+			"articles":62,
+			"citations":1153,
+			"h":18
+		},
+		"scopus":{
+			"id":"55605195900",
+			"articles":74,
+			"citations":2262,
+			"h":26
+		},
+		"google-scholar":{
+			"id":"212SLn0AAAAJ",
+			"articles":87,
+			"citations":4308,
+			"h":31
+		}
+	},
+	"bibliography":{
+		"theses":[
+			"diaz:thesis"
+		],
+		"book-chapters":[
+			"diaz:vertical-chapter"
+		],
+		"journal-articles":[
+			"olteanu:survey",
+			"SWIRL2018",
+			"white:result-prefetching-tois",
+			"diaz:worst-practices",
+			"rothschild:twitter-panel",
+			"imran:survey2015",
+			"diaz:forum2014",
+			"goldstein:ad-distract-journal",
+			"hemant:donations",
+			"tois:elad",
+			"tist:twitter",
+			"Diaz:Regularizing-query-based-retrieval",
+			"fdiaz:temporal-journal"			
+		],
+		"conference-papers":[
+			"mehrotra:fair-marketplace",
+			"garcia-gathright:sigir2018",
+			"mehrotra:demographics-of-search",
+			"alonso:timelines-websci",
+			"mitra:ndrm",
+			"ekstrand:ts-eval",
+			"goel:twitter-language-change",
+			"diaz:altr",
+			"diaz:local-w2v",
+			"diaz:sigir2016",
+			"kedzie:ijcai2016",
+			"diaz:pqr",
+			"arguello:ecir2016",
+			"diaz:crm",
+			"kedzie:acl2015",
+			"metrikov:image-ads",
+			"icwsm2014:crisislex",
+			"Shokouhi:sigir2014",
+			"golbus:www2014",
+			"fdiaz:robust-mouse-tracking-models",
+			"imran:iscram2013",
+			"qi:temporal-summarization",
+			"arguello:fedltr",
+			"yomtov:detachment",
+			"yomtov:location",
+			"seo:quicklinks",
+			"arguello:fedeval",
+			"bai:mlr-xfer",
+			"diaz:dating",
+			"arguello:vertical-xfer",
+			"dong:twitter-mlr",
+			"dong:y-recency",
+			"arguello:classification-dir",
+			"hassan:geo-newsdd",
+			"arguello:vertical-selection",
+			"diaz:online-vertical-selection",
+			"diaz:online-newsdd",
+			"diaz:rf-regularization",
+			"diaz:xling-regularization",
+			"diaz:lsr-bounds",
+			"diaz:autocorrelation",
+			"diaz:pseudoaligned-corpora",
+			"diaz:ee",
+			"diaz:regularization",
+			"diaz:sigir04",
+			"kelly:users",
+			"diaz:wearables"			
+		],
+		"workshop-papers":[
+			"bird:ethics-of-autonomous-experimentation",
+			"abel:geql",
+			"diaz:kdd2014",
+			"imran:www2013",
+			"louis:newsdd-similarity",
+			"hassan:geo-mlr",
+			"umass:robust2005",
+			"umass:hard2005",
+			"umass-hard2004"			
+		],
+		"tutorials":[
+			"ekstrand:sigir-2019-tutorial",
+			"monitor:recsys-tutorial",
+			"crisis-informatics-tutorial",
+			"temporal-dynamics-tutorial",
+			"fedsci-tutorial-2",
+			"fedsci-tutorial"			
+		]
+	},
+	"patents":{
+		"granted":[
+			"diaz2012system:1",
+			"diaz:audience-response",
+			"chang2013cross",
+			"jones2013system",
+			"diaz2012system:2",
+			"jones2009system"				
+		],
+		"applied":[
+			"josifovski2013method",
+			"yom2012using"				
+		]
+	},
+	"awards":[
+		{
+			"title":"British Computer Society Karen Sp{\\\"a}rck Jones Award",
+			"year":2017
+		},
+		{
+			"title":"Finalist for Paul E. Green Award, Journal of Marketing Research",
+			"year":2015
+		},
+		{
+			"title":"ISCRAM Best Paper Award",
+			"year":2013
+		},
+		{
+			"title":"SIGIR Best Paper Nomination",
+			"year":2011
+		},
+		{
+			"title":"ECIR Best Student Paper Award",
+			"year":2011
+		},
+		{
+			"title":"SIGIR Best Paper Award",
+			"year":2009
+		},
+		{
+			"title":"WSDM Best Paper Award",
+			"year":2009
+		}
+	],
+	"fellowships":[
+		{
+			"title": "UCLA Institute for Pure and Mathematics Postdoctoral Fellow",
+			"year": 2006
+		},
+		{
+			"title": "National Science Foundation Summer Institute in Japan",
+			"year": 2001
+		},
+		{
+			"title": "University of Massachusetts Opportunity Fellowship",
+			"year": 2000
+		}
+	],
+	"service":{
+		"organization":[
+			{
+				"venue":"SIGIR",
+				"title":"General Co-Chair",
+				"years":[2021]
+			},
+			{
+				"venue":"TREC Fair Ranking Track",
+				"title":"Co-Organizer",
+				"years":[2019]
+			},
+			{
+				"venue":"CIFAR Workshop on AI and the Curation of Culture",
+				"title":"Co-Organizer",
+				"years":[2019]
+			},
+			{
+				"venue":"FAT*",
+				"title":"Program Co-Chair",
+				"years":[2019]
+			},
+			{
+				"venue":"Strategic Workshop on Information Retrieval in Lorne",
+				"title":"Co-Organizer",
+				"years":[2018]
+			},
+			{
+				"venue":"SIGIR",
+				"title":"Awards Chair",
+				"years":[2014,2015,2016]
+			},
+			{
+				"venue":"SIGIR Forum",
+				"title":"Editor",
+				"years":[2012,2013,2014]
+			},
+			{
+				"venue":"Workshop on Social Web for Disaster Management",
+				"title":"Co-Organizer",
+				"years":[2015, 2016]
+			},
+			{
+				"venue":"WSDM",
+				"title":"General Co-Chair",
+				"years":[2014]
+			},
+			{
+				"venue":"TREC Web Track",
+				"title":"Co-Organizer",
+				"years":[2013,2014]
+			},
+			{
+				"venue":"TREC Temporal Summarization Track",
+				"title":"Co-Organizer",
+				"years":[2013,2014]
+			},
+			{
+				"venue":"NTCIR Recipe Search Track",
+				"title":"Co-Organizer",
+				"years":[2014]
+			},
+			{
+				"venue":"SIGIR Workshop on Time-aware Information Access",
+				"title":"Co-Organizer",
+				"years":[2012, 2013, 2014]
+			},
+			{
+				"venue":"SIGIR Workshop on Social Web Search and Mining: Analysis of User Generated Content Under Crisis",
+				"title":"Co-Organizer",
+				"years":[2011]
+			}
+		],
+		"reviewing":[
+			{
+				"venue":"SIGIR",
+				"role":"SPC",
+				"years":[2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
+			},
+			{
+				"venue":"SIGIR",
+				"role":"PC",
+				"years":[2008,2009,2010]
+			},
+			{
+				"venue":"CIKM",
+				"role":"PC",
+				"years":[2010,2011,2014]
+			},
+			{
+				"venue":"CIKM",
+				"role":"SPC",
+				"years":[2012]
+			},
+			{
+				"venue":"CIKM",
+				"role":"Vice Chair",
+				"years":[2009]
+			},
+			{
+				"venue":"WSDM",
+				"role":"PC",
+				"years":[2010,2011]
+			},
+			{
+				"venue":"WSDM",
+				"role":"SPC",
+				"years":[2012,2013,2014,2015,2016,2017,2018]
+			},
+			{
+				"venue":"WWW",
+				"role":"PC",
+				"years":[2011,2012,2013,2014]
+			},
+			{
+				"venue":"WWW",
+				"role":"Track Chair",
+				"years":[2017]
+			}
+		]
+	},
+	"skills":[
+		"Extensive programming C/C++ experience on Unix platforms.",
+		"Moderate experience with audio programming on iOS.",
+		"Extensive experience with production machine learning environments, including feature generation, model training, and evaluation.",
+		"Experience with pytorch, GNU Scientific Library, Matlab/Octave, R, Python, Perl, Java, and scientific computing in a clustered environment.",
+		"English and Spanish fluency.",
+		"Some French."
+	]
+}
