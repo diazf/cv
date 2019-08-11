@@ -201,17 +201,26 @@ with open(sys.argv[1],"r") as fp:
     name = " ".join([data["given-name"],data["sur-name"]])
     print("\\author{\\textcolor{BrickRed}{%s}}"%name)
     print("\\begin{document}\n\\maketitle")
-    printDegrees(data["degrees"])
-    printAcademicAffiliations(data["academic-affiliation"])
-    printEmployment(data["employment"])
-    printTeaching(data["teaching"])
-    printSupervision(data["supervision"])
+    if "degrees" in data:
+        printDegrees(data["degrees"])
+    if "academic-affiliation" in data:
+        printAcademicAffiliations(data["academic-affiliation"])
+    if "employment" in data:
+        printEmployment(data["employment"])
+    if "teaching" in data:
+        printTeaching(data["teaching"])
+    if "supervision" in data:
+        printSupervision(data["supervision"])
     printPublications(data["bibliometrics"],data["bibliography"])
-    printPatents(data["patents"])
+    if "patents" in data:
+        printPatents(data["patents"])
     print("\\vspace{1em}")
-    printRecognition(data["awards"],data["fellowships"])
-    printService(data["service"])
-    printSkills(data["skills"])
+    if "awards" in data:
+        printRecognition(data["awards"],data["fellowships"])
+    if "service" in data:
+        printService(data["service"])
+    if "skills" in data:
+        printSkills(data["skills"])
     if not("references" in data):
         print("\\section{References}\\noindent \\emph{Available on request.}")
     print("\\bibliographystyle{plain}")
