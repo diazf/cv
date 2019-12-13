@@ -359,21 +359,21 @@
 	"bibliometrics":{
 		"acm":{
 			"id":"81551748956",
-			"articles":62,
-			"citations":1153,
+			"articles":74,
+			"citations":1202,
 			"h":18
 		},
 		"scopus":{
 			"id":"55605195900",
-			"articles":74,
-			"citations":2262,
-			"h":26
+			"articles":76,
+			"citations":2413,
+			"h":27
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":87,
-			"citations":4308,
-			"h":31
+			"articles":80,
+			"citations":4629,
+			"h":32
 		}
 	},
 	"bibliography":{
@@ -513,6 +513,10 @@
 	],
 	"fellowships":[
 		{
+			"title": "Canada CIFAR AI Chair",
+			"year": 2019
+		},
+		{
 			"title": "UCLA Institute for Pure and Mathematics Postdoctoral Fellow",
 			"year": 2006
 		},
@@ -535,7 +539,7 @@
 			{
 				"venue":"TREC Fair Ranking Track",
 				"title":"Co-Organizer",
-				"year":[2019]
+				"year":[2019,2020]
 			},
 			{
 				"venue":"CIFAR Workshop on AI and the Curation of Culture",

@@ -152,7 +152,7 @@ def printRecognition(X,Y):
         print("\n\n")
         
     if (Y!=None):
-        print("\\noindent\\textbf{Fellowships}\\\\")
+        print("\\noindent\\textbf{Fellowships and Chairs}\\\\")
         for y in Y:
             print("%s, %d\\\\"%(y["title"],y["year"]))
 
