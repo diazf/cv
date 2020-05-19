@@ -359,21 +359,21 @@
 	"bibliometrics":{
 		"acm":{
 			"id":"81551748956",
-			"articles":74,
-			"citations":1202,
-			"h":18
+			"articles":70,
+			"citations":1831,
+			"h":21
 		},
 		"scopus":{
 			"id":"55605195900",
 			"articles":76,
-			"citations":2413,
+			"citations":2587,
 			"h":27
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":80,
-			"citations":4629,
-			"h":32
+			"articles":84,
+			"citations":5060,
+			"h":33
 		}
 	},
 	"bibliography":{
@@ -398,7 +398,14 @@
 			"Diaz:Regularizing-query-based-retrieval",
 			"fdiaz:temporal-journal"			
 		],
+		"under-review":[
+			"diaz:expexp",
+			"olteanu:autosuggest",
+			"robertson:smart-reply"
+		],
 		"conference-papers":[
+			"zamani:clarification",
+			"biega:toward-dm",
 			"mehrotra:fair-marketplace",
 			"garcia-gathright:sigir2018",
 			"mehrotra:demographics-of-search",

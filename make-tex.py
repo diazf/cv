@@ -107,21 +107,25 @@ def printBibliometrics(X):
     # print("\\noindent\\begin{center}\\begin{tabular}{lccc}&\\href{http://dl.acm.org/author\\_page.cfm?id=%s}{\\textit{ACM Digital Library}}&\\href{https://www.scopus.com/authid/detail.uri?authorId=%s}{\\textit{Scopus}}&\\href{http://scholar.google.com/citations?user=%s}{\\textit{Google Scholar}}\\\\\n\\hline\narticles&&&\\\\\ncitations&&&\\\\\ncitations/article&&&\\\\\nh-index&&&\n\\end{tabular}\n\\end{center}"%(X["acm"],X["scopus"],X["google-scholar"]))
     
 def printBibliography(X):
-    if "theses" in X:
-        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Thesis}\\\\")
-        for x in X["theses"]:
+    if "under-review" in X:
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Under Review}\\\\")
+        for x in X["under-review"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
-    if "book-chapters" in X:
-        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Chapter}\\\\")
-        for x in X["book-chapters"]:
+    if "conference-papers" in X:
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Conference}\\\\")
+        for x in X["conference-papers"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "journal-articles" in X:
         print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Journal}\\\\")
         for x in X["journal-articles"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
-    if "conference-papers" in X:
-        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Conference}\\\\")
-        for x in X["conference-papers"]:
+    if "book-chapters" in X:
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Chapter}\\\\")
+        for x in X["book-chapters"]:
+            print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
+    if "theses" in X:
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Thesis}\\\\")
+        for x in X["theses"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "workshop-papers" in X:
         print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Workshop}\\\\")
