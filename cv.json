@@ -62,11 +62,21 @@
 	],
 	"employment":[
 		{
+			"title":"Staff Research Scientist",
+			"affiliation":"Google Research",
+			"location":"Montréal, QC",
+			"start-year":2020,
+			"start-month":"September",
+			"description":"I conduct core research in the evaluation and design of search and recommendation systems.  Topics include fairness, accountability, transparency, and ethics of production systems."
+		},		
+		{
 			"title":"Assistant Research Director",
 			"affiliation":"Microsoft Research",
 			"location":"Montréal, QC",
 			"start-year":2018,
 			"start-month":"June",
+			"end-year":2020,
+			"end-month":"July",
 			"description":"I assist with the management of twenty five researchers focused on natural language processing, machine learning, and the societal impacts of artificial intelligence.  I directly lead a multidisciplinary research group focused on fairness, accountability, transparency, and ethics (FATE) of artificial intelligence systems.  The group externally publishes basic research and actively collaborates with engineering teams in Microsoft.  In addition, I maintain an active research agenda in core information retrieval and its application to production systems such as bing."
 		},		
 		{
@@ -276,16 +286,16 @@
 				"year":[
 					2015
 				],
-				"title":"PhD Student",
-				"affiliation":"Columbia University"				
+				"title":"Research Scientist",
+				"affiliation":"Rasa"				
 			},
 			{
 				"name":"David Abel",
 				"year":[
 					2015
 				],
-				"title":"PhD Student",
-				"affiliation":"Brown University"				
+				"title":"Research Scientist",
+				"affiliation":"DeepMind"				
 			},
 			{
 				"name":"Rishabh Mehrotra",
@@ -316,13 +326,21 @@
 				"year":[
 					2019
 				],
-				"title":"PhD Student",
-				"affiliation":"University of Massachusetts Amherst"				
+				"title":"Postdoctoral Scholar",
+				"affiliation":"Brown University"				
 			},
 			{
 				"name":"Ashudeep Singh",
 				"year":[
 					2019
+				],
+				"title":"PhD Student",
+				"affiliation":"Cornell University"				
+			},
+			{
+				"name":"Maria Antoniak",
+				"year":[
+					2020
 				],
 				"title":"PhD Student",
 				"affiliation":"Cornell University"				
@@ -359,21 +377,21 @@
 	"bibliometrics":{
 		"acm":{
 			"id":"81551748956",
-			"articles":70,
-			"citations":1831,
-			"h":21
+			"articles":73,
+			"citations":2008,
+			"h":23
 		},
 		"scopus":{
 			"id":"55605195900",
-			"articles":76,
-			"citations":2587,
-			"h":27
+			"articles":81,
+			"citations":2875,
+			"h":28
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":84,
-			"citations":5060,
-			"h":33
+			"articles":85,
+			"citations":5568,
+			"h":34
 		}
 	},
 	"bibliography":{
@@ -384,8 +402,8 @@
 			"diaz:vertical-chapter"
 		],
 		"journal-articles":[
-			"olteanu:survey",
 			"SWIRL2018",
+			"olteanu:survey",
 			"white:result-prefetching-tois",
 			"diaz:worst-practices",
 			"rothschild:twitter-panel",
@@ -399,11 +417,12 @@
 			"fdiaz:temporal-journal"			
 		],
 		"under-review":[
-			"diaz:expexp",
-			"olteanu:autosuggest",
-			"robertson:smart-reply"
 		],
 		"conference-papers":[
+			"arguello:tot",
+			"robertson:smart-reply",
+			"diaz:expexp",
+			"olteanu:autosuggest",
 			"zamani:clarification",
 			"biega:toward-dm",
 			"mehrotra:fair-marketplace",
@@ -466,6 +485,7 @@
 			"umass-hard2004"			
 		],
 		"tutorials":[
+			"diaz:neurips-2020-tutorial",
 			"ekstrand:sigir-2019-tutorial",
 			"monitor:recsys-tutorial",
 			"crisis-informatics-tutorial",

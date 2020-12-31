@@ -107,7 +107,7 @@ def printBibliometrics(X):
     # print("\\noindent\\begin{center}\\begin{tabular}{lccc}&\\href{http://dl.acm.org/author\\_page.cfm?id=%s}{\\textit{ACM Digital Library}}&\\href{https://www.scopus.com/authid/detail.uri?authorId=%s}{\\textit{Scopus}}&\\href{http://scholar.google.com/citations?user=%s}{\\textit{Google Scholar}}\\\\\n\\hline\narticles&&&\\\\\ncitations&&&\\\\\ncitations/article&&&\\\\\nh-index&&&\n\\end{tabular}\n\\end{center}"%(X["acm"],X["scopus"],X["google-scholar"]))
     
 def printBibliography(X):
-    if "under-review" in X:
+    if ("under-review" in X) and (len(X["under-review"]) > 0):
         print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Under Review}\\\\")
         for x in X["under-review"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
