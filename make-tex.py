@@ -204,6 +204,10 @@ with open(sys.argv[1],"r") as fp:
     printHeader()
     name = " ".join([data["given-name"],data["sur-name"]])
     print("\\author{\\textcolor{BrickRed}{%s}}"%name)
+    # print("\\authoremail{%s}"%data["email"])
+    # print("\\authorwww{%s}"%data["www"])
+    print("\\newcommand{\\authoremail}[0]{%s}"%data["email"])
+    print("\\newcommand{\\authorwww}[0]{%s}"%data["www"])
     print("\\begin{document}\n\\maketitle")
     if "degrees" in data:
         printDegrees(data["degrees"])
