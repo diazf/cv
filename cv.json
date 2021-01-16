@@ -421,6 +421,7 @@
 		"under-review":[
 		],
 		"conference-papers":[
+			"omer:minimal-fairness-collection",
 			"arguello:tot",
 			"robertson:smart-reply",
 			"diaz:expexp",
