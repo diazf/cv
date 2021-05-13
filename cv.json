@@ -379,21 +379,21 @@
 	"bibliometrics":{
 		"acm":{
 			"id":"81551748956",
-			"articles":73,
-			"citations":2008,
+			"articles":75,
+			"citations":2113,
 			"h":23
 		},
 		"scopus":{
 			"id":"55605195900",
-			"articles":81,
-			"citations":2875,
-			"h":28
+			"articles":82,
+			"citations":2987,
+			"h":29
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
 			"articles":85,
-			"citations":5568,
-			"h":34
+			"citations":5889,
+			"h":35
 		}
 	},
 	"bibliography":{
@@ -419,6 +419,7 @@
 			"fdiaz:temporal-journal"			
 		],
 		"under-review":[
+			"ekstrand:fair-ia-survey"
 		],
 		"conference-papers":[
 			"omer:minimal-fairness-collection",
