@@ -112,15 +112,15 @@ def printBibliography(X):
         for x in X["under-review"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "conference-papers" in X:
-        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Conference}\\\\")
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Conference Papers}\\\\")
         for x in X["conference-papers"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "journal-articles" in X:
-        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Journal}\\\\")
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Articles}\\\\")
         for x in X["journal-articles"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "book-chapters" in X:
-        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Chapter}\\\\")
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Chapters}\\\\")
         for x in X["book-chapters"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "theses" in X:
@@ -128,11 +128,11 @@ def printBibliography(X):
         for x in X["theses"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "workshop-papers" in X:
-        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Workshop}\\\\")
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Workshop Papers}\\\\")
         for x in X["workshop-papers"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "tutorials" in X:
-        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Tutorial}\\\\")
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Tutorials}\\\\")
         for x in X["tutorials"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     

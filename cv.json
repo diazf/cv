@@ -379,21 +379,21 @@
 	"bibliometrics":{
 		"acm":{
 			"id":"81551748956",
-			"articles":75,
-			"citations":2113,
+			"articles":77,
+			"citations":2182,
 			"h":23
 		},
 		"scopus":{
 			"id":"55605195900",
-			"articles":82,
-			"citations":2987,
-			"h":29
+			"articles":84,
+			"citations":3108,
+			"h":30
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":85,
-			"citations":5889,
-			"h":35
+			"articles":97,
+			"citations":6664,
+			"h":39
 		}
 	},
 	"bibliography":{
@@ -404,6 +404,8 @@
 			"diaz:vertical-chapter"
 		],
 		"journal-articles":[
+			"baym:music-metrics",
+			"born:cifar",
 			"SWIRL2018",
 			"olteanu:survey",
 			"white:result-prefetching-tois",
