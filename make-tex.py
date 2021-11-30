@@ -6,6 +6,9 @@ import json
 def printHeader():
     with open("cv-header.tex","r") as fp:
         print(fp.read())
+def printSummary(X):
+    print("\\section{Summary}\\noindent")
+    print("%s\\\\\n"%(X))
 
 def printDegrees(X):
     print("\\section{Education}\\noindent\\begin{tabbing}")
@@ -35,7 +38,7 @@ def printAcademicAffiliations(X):
     print("\n\n")
 
 def printEmployment(X):
-    print("\\section{Research \\\\Experience}")
+    print("\\section{Positions}")
     for x in X:
         s = "%s %d"%(x["start-month"],x["start-year"])
         if not("end-year" in x):
@@ -46,21 +49,30 @@ def printEmployment(X):
     print("\n\n")
 
 def printTeaching(X):
-    print("\\section{Teaching \\\\Experience}")
+    # print("\\section{Academic \\\\Teaching}")
+    print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Academic}\\\\\\\\")
     for x in X:
         print("\\noindent\\textbf{%s} \\\\\n%s\\hfill %s\\\\\\\\\n%s\\\\\n"%(x["title"],x["school"],", ".join(x["semesters"]),x["description"]))
     print("\n\n")
+def printTutorials(X):
+    if "tutorials" in X:
+        # print("\\section{Tutorials}\\noindent")
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Tutorials}\\\\")
+        for x in X["tutorials"]:
+            print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
 
 def printSupervision(X):
-    print("\\section{Supervision \\\\Experience}")
+    print("\\section{Supervision}")
     if "interns" in X:
         print("\\noindent\\textbf{Former Interns}\\\\")
-        for x in X["interns"]:
+        sortedInterns = sorted(X["interns"],key=lambda x: x["year"], reverse=True)
+        for x in sortedInterns:
             print("%s (%s), %s, %s\\\\"%(x["name"],", ".join(map(lambda y:"%d"%y, x["year"])),x["title"],x["affiliation"]))
         print("\n\n")
     if "reader" in X:
         print("\\noindent\\textbf{PhD Examiner}\\\\")
-        for x in X["reader"]:
+        sortedStudents = sorted(X["reader"],key=lambda x: x["year"], reverse=True)
+        for x in sortedStudents:
             print("%s, %s, %d\\\\"%(x["name"],x["school"],x["year"]))
         print("\n\n")
 
@@ -116,7 +128,7 @@ def printBibliography(X):
         for x in X["conference-papers"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "journal-articles" in X:
-        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Articles}\\\\")
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Journal Articles}\\\\")
         for x in X["journal-articles"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "book-chapters" in X:
@@ -131,10 +143,10 @@ def printBibliography(X):
         print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Workshop Papers}\\\\")
         for x in X["workshop-papers"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
-    if "tutorials" in X:
-        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Tutorials}\\\\")
-        for x in X["tutorials"]:
-            print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
+    # if "tutorials" in X:
+    #     print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Tutorials}\\\\")
+    #     for x in X["tutorials"]:
+    #         print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     
 def printPatents(X):
     print("\\section{Patents}")
@@ -209,17 +221,22 @@ with open(sys.argv[1],"r") as fp:
     print("\\newcommand{\\authoremail}[0]{%s}"%data["email"])
     print("\\newcommand{\\authorwww}[0]{%s}"%data["www"])
     print("\\begin{document}\n\\maketitle")
+    if "summary" in data:
+        printSummary(data["summary"])
     if "degrees" in data:
         printDegrees(data["degrees"])
-    if "academic-affiliation" in data:
-        printAcademicAffiliations(data["academic-affiliation"])
     if "employment" in data:
         printEmployment(data["employment"])
-    if "teaching" in data:
-        printTeaching(data["teaching"])
+    if "academic-affiliation" in data:
+        printAcademicAffiliations(data["academic-affiliation"])
+    printPublications(data["bibliometrics"],data["bibliography"])
+    if ("teaching" in data) or ("tutorials" in data["bibliography"]):
+        print("\\section{Teaching}")
+        if ("teaching" in data):
+            printTeaching(data["teaching"])
+        printTutorials(data["bibliography"])
     if "supervision" in data:
         printSupervision(data["supervision"])
-    printPublications(data["bibliometrics"],data["bibliography"])
     if "patents" in data:
         printPatents(data["patents"])
     print("\\vspace{1em}")

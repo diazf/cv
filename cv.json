@@ -4,6 +4,7 @@
 	"email":"diazf@acm.org",
 	"www":"http://841.io",
 	"bib":"fdiaz",
+	"summary":"I conduct and lead interdisciplinary research on the design and evaluation of search engines, recommendation systems, and other human-computer systems.  My core research includes designing new algorithms, developing evaluation metrics, and understanding the societal impacts of artificial intelligence.",
 	"degrees":[
 		{
 			"degree":"PhD",
@@ -69,7 +70,7 @@
 			"location":"Montréal, QC",
 			"start-year":2020,
 			"start-month":"September",
-			"description":"I conduct core research in the evaluation and design of search and recommendation systems.  Topics include fairness, accountability, transparency, and ethics of production systems."
+			"description":"I conduct core research in the evaluation and design of search and recommendation systems, including fairness, accountability, transparency, and ethics of production systems.  Outside of my core responsibilities, I continue to grow a multidisciplinary research program around the broader impacts of music creation, recommendation, consumption, and their longer terms effects."
 		},		
 		{
 			"title":"Assistant Research Director",
@@ -79,7 +80,7 @@
 			"start-month":"June",
 			"end-year":2020,
 			"end-month":"July",
-			"description":"I assist with the management of twenty five researchers focused on natural language processing, machine learning, and the societal impacts of artificial intelligence.  I directly lead a multidisciplinary research group focused on fairness, accountability, transparency, and ethics (FATE) of artificial intelligence systems.  The group externally publishes basic research and actively collaborates with engineering teams in Microsoft.  In addition, I maintain an active research agenda in core information retrieval and its application to production systems such as bing."
+			"description":"I assisted with the management of twenty five researchers focused on natural language processing, machine learning, and the societal impacts of artificial intelligence.  I directly led a multidisciplinary research group focused on fairness, accountability, transparency, and ethics (FATE) of artificial intelligence systems.  The group externally published basic research and actively collaborated with engineering teams in Microsoft.  In addition, I maintained an active research agenda in core information retrieval and its application to production systems such as bing.  Moreover, I started a research program around the broader impacts of music creation, recommendation, consumption, and their longer terms effects."
 		},		
 		{
 			"title":"Director of Research",
@@ -89,7 +90,7 @@
 			"start-month":"March",
 			"end-year":2018,
 			"end-month":"May",
-			"description":"I led the applied research organization of twenty researchers focused on search, recommendation, metrics, and evaluation.  I helped define the company's research approach and culture, including how it interacts internally with product teams and externally with the academic community.  In addition, I was an active member of the recommendations leadership team, involved in strategic planning for a two year product roadmap."
+			"description":"I led the applied research organization of twenty researchers focused on search, recommendation, metrics, and evaluation.  I helped define the company's research approach and culture, including how it interacted internally with product teams and externally with the academic community.  In addition, I was an active member of the recommendations leadership team, involved in strategic planning for a two year product road map."
 		},		
 		{
 			"title":"Senior Researcher",
@@ -129,7 +130,7 @@
 			"start-month":"September",
 			"end-year":2007,
 			"end-month":"August",
-			"description":"Disseration research focused on information retrieval under the supervision of James Allan."
+			"description":"I conducted dissertation research focused on machine learning approaches to information retrieval under the supervision of James Allan."
 		},		
 		{
 			"title":"Intern",
@@ -289,7 +290,7 @@
 					2015
 				],
 				"title":"Research Scientist",
-				"affiliation":"Rasa"				
+				"affiliation":"Raza"				
 			},
 			{
 				"name":"David Abel",
@@ -336,8 +337,8 @@
 				"year":[
 					2019
 				],
-				"title":"PhD Student",
-				"affiliation":"Cornell University"				
+				"title":"Research Scientist",
+				"affiliation":"Pinterest"				
 			},
 			{
 				"name":"Maria Antoniak",
@@ -379,20 +380,20 @@
 	"bibliometrics":{
 		"acm":{
 			"id":"81551748956",
-			"articles":77,
-			"citations":2182,
+			"articles":78,
+			"citations":2289,
 			"h":23
 		},
 		"scopus":{
 			"id":"55605195900",
-			"articles":84,
-			"citations":3108,
+			"articles":86,
+			"citations":3374,
 			"h":30
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":99,
-			"citations":6757,
+			"articles":100,
+			"citations":7104,
 			"h":40
 		}
 	},
@@ -424,6 +425,7 @@
 			"ekstrand:fair-ia-survey"
 		],
 		"conference-papers":[
+			"srinivasan:artsheets",
 			"omer:minimal-fairness-collection",
 			"arguello:tot",
 			"robertson:smart-reply",
@@ -515,6 +517,14 @@
 		]
 	},
 	"awards":[
+		{
+			"title":"CIKM Best Paper Nomination",
+			"year":2020
+		},
+		{
+			"title":"CSCW Honorable Mention",
+			"year":2020
+		},
 		{
 			"title":"British Computer Society Karen Sp{\\\"a}rck Jones Award",
 			"year":2017
