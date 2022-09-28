@@ -233,7 +233,7 @@
 				"year":[
 					2009
 				],
-				"title":"Research Manager",
+				"title":"Senior Principal Research Manager",
 				"affiliation":"Microsoft Research"				
 			},
 			{
@@ -250,7 +250,7 @@
 					2011
 				],
 				"title":"Software Engineer",
-				"affiliation":"Google"				
+				"affiliation":"Meta"				
 			},
 			{
 				"name":"Matthew Ekstrand-Abeug",
@@ -273,8 +273,8 @@
 				"year":[
 					2013
 				],
-				"title":"Software Engineer",
-				"affiliation":"Equifax"				
+				"title":"Developer",
+				"affiliation":"Fintual"				
 			},
 			{
 				"name":"Ioannis Paparrizos",
@@ -289,8 +289,8 @@
 				"year":[
 					2015
 				],
-				"title":"Research Scientist",
-				"affiliation":"Raza"				
+				"title":"Senior Researcher",
+				"affiliation":"Microsoft Semantic Machines"				
 			},
 			{
 				"name":"David Abel",
@@ -305,8 +305,8 @@
 				"year":[
 					2016
 				],
-				"title":"Senior Research Scientist",
-				"affiliation":"Spotify"				
+				"title":"Director of Machine Learning",
+				"affiliation":"ShareChat"				
 			},
 			{
 				"name":"Cristina Garbacea",
@@ -380,31 +380,35 @@
 	"bibliometrics":{
 		"acm":{
 			"id":"81551748956",
-			"articles":78,
-			"citations":2289,
-			"h":23
+			"articles":84,
+			"citations":2640,
+			"h":25
 		},
 		"scopus":{
 			"id":"55605195900",
-			"articles":86,
-			"citations":3374,
-			"h":30
+			"articles":94,
+			"citations":4062,
+			"h":32
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":100,
-			"citations":7104,
-			"h":40
+			"articles":107,
+			"citations":7976,
+			"h":42
 		}
 	},
 	"bibliography":{
 		"theses":[
 			"diaz:thesis"
 		],
+		"books":[
+			"ekstrand:fair-ia-survey"
+		],
 		"book-chapters":[
 			"diaz:vertical-chapter"
 		],
 		"journal-articles":[
+			"wu:fairmoop",
 			"baym:music-metrics",
 			"born:cifar",
 			"SWIRL2018",
@@ -422,9 +426,15 @@
 			"fdiaz:temporal-journal"			
 		],
 		"under-review":[
-			"ekstrand:fair-ia-survey"
 		],
 		"conference-papers":[
+			"ferraro:commonality",
+			"diaz:rpp",
+			"zamani:reml",
+			"wu:jmef",
+			"radlinski:strand",
+			"shanmugam:dm",
+			"li:exposing-queries",
 			"srinivasan:artsheets",
 			"omer:minimal-fairness-collection",
 			"arguello:tot",

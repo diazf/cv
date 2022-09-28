@@ -135,6 +135,10 @@ def printBibliography(X):
         print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Chapters}\\\\")
         for x in X["book-chapters"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
+    if "books" in X:
+        print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Books}\\\\")
+        for x in X["books"]:
+            print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
     if "theses" in X:
         print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Thesis}\\\\")
         for x in X["theses"]:
