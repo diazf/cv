@@ -91,7 +91,7 @@ def printBibliometrics(X):
     h = "h-index"
     citations = "citations"
     citationsPerArticle = "citations/article"
-    for src in ["acm","scopus","google-scholar"]:
+    for src in ["acm","scopus","google-scholar","aminer"]:
         header+="c"
         urls += " & "
         articles += " & "
@@ -104,6 +104,8 @@ def printBibliometrics(X):
             urls += "\\href{https://www.scopus.com/authid/detail.uri?authorId=%s}{\\textit{Scopus}}"%(X[src]["id"])
         elif src=="google-scholar":
             urls += "\\href{http://scholar.google.com/citations?user=%s}{\\textit{Google Scholar}}"%(X[src]["id"])
+        elif src=="aminer":
+            urls += "\\href{https://www.aminer.org/profile/%s}{\\textit{AMiner}}"%(X[src]["id"])
         articles += "%d"%X[src]["articles"]
         citations += "%d"%X[src]["citations"]
         citationsPerArticle += "%.1f"%(X[src]["citations"]/X[src]["articles"])
