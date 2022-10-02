@@ -200,15 +200,24 @@ def sequenceToRanges(a):
     
 def printService(X):
     print("\\section{Service}")
-    if "organization" in X:
-        print("\\noindent\\textbf{Organization}\\\\")
-        for x in X["organization"]:
+    if "organizational leadership" in X:
+        print("\\noindent\\textbf{Organizational Leadership}\\\\")
+        for x in X["organizational leadership"]:
+            years = sequenceToRanges(x["year"])
+            print("%s, %s, %s\\\\"%(x["venue"],x["title"],years))
+            # print("\\\\".join([x["venue"],x["title"],years]))
+            # print("\\noindent %s\\hfill %s\\\\"%(x["venue"],x["title"]))
+            # print("\\hfill %s\\\\\\"%years)
+        print("\n\n")
+    if "organizational support" in X:
+        print("\\noindent\\textbf{Organizational Support}\\\\")
+        for x in X["organizational support"]:
             years = sequenceToRanges(x["year"])
             print("%s, %s, %s\\\\"%(x["venue"],x["title"],years))
         print("\n\n")
-    if "reviewing" in X:
-        print("\\noindent\\textbf{Reviewing}\\\\")
-        for x in X["reviewing"]:
+    if "technical expertise" in X:
+        print("\\noindent\\textbf{Technical Expertise}\\\\")
+        for x in X["technical expertise"]:
             years = sequenceToRanges(x["year"])
             print("%s, %s, %s\\\\"%(x["venue"],x["title"],years))
     print("\n\n")

@@ -589,7 +589,7 @@
 		}
 	],
 	"service":{
-		"organization":[
+		"organizational leadership":[
 			{
 				"venue":"SIGIR",
 				"title":"General Co-Chair",
@@ -606,24 +606,24 @@
 				"year":[2019]
 			},
 			{
-				"venue":"FAT*",
-				"title":"Program Co-Chair",
-				"year":[2019]
-			},
-			{
 				"venue":"Strategic Workshop on Information Retrieval in Lorne",
 				"title":"Co-Organizer",
-				"year":[2018]
+				"year":[2018,2024]
 			},
 			{
-				"venue":"SIGIR",
-				"title":"Awards Chair",
-				"year":[2014,2015,2016]
+				"venue":"NeurIPS Workshop on Cultures of AI and AI for Culture",
+				"title":"Co-Organizer",
+				"year":[2022]
 			},
 			{
-				"venue":"SIGIR Forum",
-				"title":"Editor",
-				"year":[2012,2013,2014]
+				"venue":"CVPR Workshop on Ethical Considerations in Creative applications of Computer Vision",
+				"title":"Co-Organizer",
+				"year":[2022]
+			},
+			{
+				"venue":"NeurIPS Workshop on Algorithmic Fairness through the Lens of Causality and Interpretability",
+				"title":"Co-Organizer",
+				"year":[2020]
 			},
 			{
 				"venue":"Workshop on Social Web for Disaster Management",
@@ -661,7 +661,24 @@
 				"year":[2011]
 			}
 		],
-		"reviewing":[
+		"organizational support":[
+			{
+				"venue":"ACM Ethics \\& Plagiarism Committee",
+				"title":"Member",
+				"year":[2022]
+			},
+			{
+				"venue":"SIGIR",
+				"title":"Awards Chair",
+				"year":[2014,2015,2016]
+			}
+		],
+		"technical expertise":[
+			{
+				"venue":"FAT*",
+				"title":"Program Co-Chair",
+				"year":[2019]
+			},
 			{
 				"venue":"SIGIR",
 				"title":"SPC",
@@ -676,6 +693,11 @@
 				"venue":"CIKM",
 				"title":"PC",
 				"year":[2010,2011,2014]
+			},
+			{
+				"venue":"SIGIR Forum",
+				"title":"Editor",
+				"year":[2012,2013,2014]
 			},
 			{
 				"venue":"CIKM",
