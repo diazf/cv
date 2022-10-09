@@ -176,27 +176,27 @@
 	"teaching":[
 		{
 			"title":"Web Search Engines",
-			"school":"New York University",
+			"school":"New York University (Courant)",
 			"semesters":["Spring 2013", "Fall 2014", "Fall 2016"],
-			"description":"Co-instructed a graduate level course on web search engines.  Classes consisted of lectures with evaluation based on homeworks, exams, and a final project."
+			"description":"Co-instructed (with Cong Yu) a graduate level course on web search engines.  Classes consisted of lectures with evaluation based on homeworks, exams, and a final project. I presented half of the lectures.  Class sizes ranged from 38 (Fall 2016) to 57 (Sprint 2013)."
 		},
 		{
 			"title":"Web Search",
 			"school":"Asian Summer School in Information Access",
 			"semesters":["Summer 2013"],
-			"description":"Graduate level lecture on web search engines."
+			"description":"Graduate level lecture on web search engines.  Class size was 63 students. "
 		},
 		{
 			"title":"Experimental Design for Information Systems",
 			"school":"University of Trento",
 			"semesters":["Summer 2012"],
-			"description":"Co-instructed a graduate level course on information retrieval and data mining.  Classes included a combination of lectures and paper discussion."
+			"description":"Co-instructed (with Cong Yu) a graduate level course on information retrieval and data mining.  Classes included a combination of lectures and paper discussion. I presented half of the lectures.  Class size was 20 students."
 		},
 		{
-			"title":"Advanced Information Retrieval and Databases",
-			"school":"New York University",
+			"title":"Web Search Engines",
+			"school":"New York Universit (Tandon)",
 			"semesters":["Spring 2011"],
-			"description":"Co-instructed a graduate level seminar on advanced information retrieval.  Classes included a combination of lectures and paper discussion."
+			"description":"Co-instructed (with Torsten Suel and Cong Yu) a graduate level seminar on advanced information retrieval.  Classes included a combination of lectures and paper discussion.  I presented half of the lectures.  Class size was 24 students."
 		},
 		{
 			"title":"Information Retrieval",
@@ -381,20 +381,20 @@
 		"acm":{
 			"id":"81551748956",
 			"articles":84,
-			"citations":2640,
+			"citations":2644,
 			"h":25
 		},
 		"scopus":{
 			"id":"55605195900",
 			"articles":94,
-			"citations":4062,
+			"citations":4084,
 			"h":32
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":107,
-			"citations":7976,
-			"h":42
+			"articles":117,
+			"citations":8353,
+			"h":43
 		},
 		"aminer":{
 			"id":"5606955945cedb33968d9813",
@@ -663,14 +663,20 @@
 		],
 		"organizational support":[
 			{
-				"venue":"ACM Ethics \\& Plagiarism Committee",
+				"venue":"ACM FAccT Steering Committee",
 				"title":"Member",
-				"year":[2022]
+				"start-year":2018
 			},
 			{
-				"venue":"SIGIR",
+				"venue":"ACM Ethics \\& Plagiarism Committee",
+				"title":"Member",
+				"start-year":2022
+			},
+			{
+				"venue":"ACM SIGIR",
 				"title":"Awards Chair",
-				"year":[2014,2015,2016]
+				"start-year":2014,
+				"end-year":2016
 			}
 		],
 		"technical expertise":[
@@ -681,18 +687,8 @@
 			},
 			{
 				"venue":"SIGIR",
-				"title":"SPC",
-				"year":[2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
-			},
-			{
-				"venue":"SIGIR",
-				"title":"PC",
-				"year":[2008,2009,2010]
-			},
-			{
-				"venue":"CIKM",
-				"title":"PC",
-				"year":[2010,2011,2014]
+				"title":"Perspectives Track Chair",
+				"year":[2021]
 			},
 			{
 				"venue":"SIGIR Forum",
@@ -700,9 +696,9 @@
 				"year":[2012,2013,2014]
 			},
 			{
-				"venue":"CIKM",
-				"title":"SPC",
-				"year":[2012]
+				"venue":"WWW",
+				"title":"Track Chair",
+				"year":[2017]
 			},
 			{
 				"venue":"CIKM",
@@ -710,24 +706,54 @@
 				"year":[2009]
 			},
 			{
+				"venue":"SIGIR",
+				"title":"Senior Program Committee Member",
+				"year":[2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
+			},
+			{
 				"venue":"WSDM",
-				"title":"PC",
+				"title":"Senior Program Committee Member",
+				"year":[2012,2013,2014,2015,2016,2017,2018,2023]
+			},
+			{
+				"venue":"CIKM",
+				"title":"Senior Program Committee Member",
+				"year":[2012]
+			},
+			{
+				"venue":"NeurIPS",
+				"title":"Ethics Reviewer",
+				"year":[2021,2022]
+			},
+			{
+				"venue":"NeurIPS",
+				"title":"Datasets and Benchmarks Reviewer",
+				"year":[2022]
+			},
+			{
+				"venue":"SIGIR",
+				"title":"Perspectives Program Committee Member",
+				"year":[2022]
+			},
+			{
+				"venue":"SIGIR",
+				"title":"Program Committee Member",
+				"year":[2008,2009,2010]
+			},
+			{
+				"venue":"CIKM",
+				"title":"Program Committee Member",
+				"year":[2010,2011,2014]
+			},
+			{
+				"venue":"WSDM",
+				"title":"Program Committee Member",
 				"year":[2010,2011]
 			},
 			{
-				"venue":"WSDM",
-				"title":"SPC",
-				"year":[2012,2013,2014,2015,2016,2017,2018]
-			},
-			{
 				"venue":"WWW",
-				"title":"PC",
+				"title":"Program Committee Member",
 				"year":[2011,2012,2013,2014]
-			},
-			{
-				"venue":"WWW",
-				"title":"Track Chair",
-				"year":[2017]
 			}
 		]
 	},

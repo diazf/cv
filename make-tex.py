@@ -34,7 +34,10 @@ def printAcademicAffiliations(X):
             e="present"
         else:
             e = "%s %d"%(x["end-month"],x["end-year"])
-        print("\\textbf{%s}\\hfill %s\\\\%s\\hfill %s-%s\\\\\\\\"%(x["school"],x["title"],x["location"],s,e))
+        if "description" in x:
+            print("\\noindent\\textbf{%s}\\hfill %s\\\\%s\\hfill %s-%s\\\\\\\\\n%s\\\\\n"%(x["school"],x["title"],x["location"],s,e,x["description"]))
+        else:
+            print("\\textbf{%s}\\hfill %s\\\\%s\\hfill %s-%s\\\\\\\\"%(x["school"],x["title"],x["location"],s,e))
     print("\n\n")
 
 def printEmployment(X):
@@ -212,7 +215,12 @@ def printService(X):
     if "organizational support" in X:
         print("\\noindent\\textbf{Organizational Support}\\\\")
         for x in X["organizational support"]:
-            years = sequenceToRanges(x["year"])
+            s = "%d"%(x["start-year"])
+            if not("end-year" in x):
+                e="present"
+            else:
+                e = "%d"%(x["end-year"])
+            years="%s-%s"%(s,e)
             print("%s, %s, %s\\\\"%(x["venue"],x["title"],years))
         print("\n\n")
     if "technical expertise" in X:
