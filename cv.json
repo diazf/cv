@@ -281,8 +281,8 @@
 				"year":[
 					2014
 				],
-				"title":"Postdoctoral Researcher",
-				"affiliation":"University of Chicago"				
+				"title":"Assistant Professor",
+				"affiliation":"Ohio State University"				
 			},
 			{
 				"name":"Chris Kedzie",
@@ -329,8 +329,8 @@
 				"year":[
 					2019
 				],
-				"title":"Postdoctoral Scholar",
-				"affiliation":"Brown University"				
+				"title":"Research Scientist",
+				"affiliation":"Dataminr"				
 			},
 			{
 				"name":"Ashudeep Singh",
@@ -345,8 +345,24 @@
 				"year":[
 					2020
 				],
+				"title":"Young Investigator",
+				"affiliation":"Allen Institute for AI"				
+			},
+			{
+				"name":"Esther Rolf",
+				"year":[
+					2021
+				],
+				"title":"Postdoctoral Scholar",
+				"affiliation":"Harvard University"				
+			},
+			{
+				"name":"Negar Arabzadeh",
+				"year":[
+					2022
+				],
 				"title":"PhD Student",
-				"affiliation":"Cornell University"				
+				"affiliation":"University of Waterloo"				
 			}
 		],
 		"reader":[
