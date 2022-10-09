@@ -525,7 +525,9 @@
 			"umass-hard2004"			
 		],
 		"tutorials":[
+			"stthomas:kdd2021-tutorial",
 			"diaz:neurips-2020-tutorial",
+			"ekstrand:recsys-tutorial",
 			"ekstrand:sigir-2019-tutorial",
 			"monitor:recsys-tutorial",
 			"crisis-informatics-tutorial",
