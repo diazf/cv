@@ -4,7 +4,7 @@
 	"email":"diazf@acm.org",
 	"www":"http://841.io",
 	"bib":"fdiaz",
-	"summary":"I conduct and lead interdisciplinary research on the design and evaluation of search engines, recommendation systems, and other human-computer systems.  My core research includes designing new algorithms, developing evaluation metrics, and understanding the societal impacts of artificial intelligence.",
+	"summary":"I conduct and lead interdisciplinary research on the design and evaluation of search engines and recommender systems, including their relationship to fairness, accountability, transparency, and ethics (FATE).",
 	"degrees":[
 		{
 			"degree":"PhD",
@@ -194,9 +194,9 @@
 		},
 		{
 			"title":"Web Search Engines",
-			"school":"New York Universit (Tandon)",
+			"school":"New York University (Tandon)",
 			"semesters":["Spring 2011"],
-			"description":"Co-instructed (with Torsten Suel and Cong Yu) a graduate level seminar on advanced information retrieval.  Classes included a combination of lectures and paper discussion.  I presented half of the lectures.  Class size was 24 students."
+			"description":"Co-instructed (with Torsten Suel and Cong Yu) a graduate level seminar on advanced information retrieval.  Classes included a combination of lectures and paper discussion.  I presented half of the lectures.  Class size was 10 students."
 		},
 		{
 			"title":"Information Retrieval",
