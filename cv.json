@@ -177,8 +177,8 @@
 		{
 			"title":"Web Search Engines",
 			"school":"New York University (Courant)",
-			"semesters":["Spring 2013", "Fall 2014", "Fall 2016"],
-			"description":"Co-instructed (with Cong Yu) a graduate level course on web search engines.  Classes consisted of lectures with evaluation based on homeworks, exams, and a final project. I presented half of the lectures.  Class sizes ranged from 38 (Fall 2016) to 57 (Sprint 2013)."
+			"semesters":["2013-2016"],
+			"description":"Co-instructed (with Cong Yu) a graduate level course on web search engines.  Classes consisted of lectures with evaluation based on homeworks, exams, and a final project. I presented half of the lectures.  Class sizes ranged from thirty to fifty."
 		},
 		{
 			"title":"Web Search",
@@ -196,7 +196,7 @@
 			"title":"Web Search Engines",
 			"school":"New York University (Tandon)",
 			"semesters":["Spring 2011"],
-			"description":"Co-instructed (with Torsten Suel and Cong Yu) a graduate level seminar on advanced information retrieval.  Classes included a combination of lectures and paper discussion.  I presented half of the lectures.  Class size was 10 students."
+			"description":"Co-instructed (with Cong Yu) a graduate level seminar on advanced information retrieval.  Classes included a combination of lectures and paper discussion.  I presented half of the lectures.  Class size was 10 students."
 		},
 		{
 			"title":"Information Retrieval",
@@ -402,21 +402,27 @@
 		},
 		"scopus":{
 			"id":"55605195900",
-			"articles":94,
-			"citations":4084,
+			"articles":95,
+			"citations":4177,
 			"h":32
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":117,
-			"citations":8353,
-			"h":43
+			"articles":123,
+			"citations":8618,
+			"h":44
 		},
 		"aminer":{
 			"id":"5606955945cedb33968d9813",
 			"articles":129,
 			"citations":6503,
 			"h":40
+		},
+		"allen":{
+			"id":"Fernando-Diaz/145472333",
+			"articles":138,
+			"citations":7293,
+			"h":42
 		}
 	},
 	"bibliography":{
@@ -514,6 +520,7 @@
 			"diaz:wearables"			
 		],
 		"workshop-papers":[
+			"rolf:data-externalities",
 			"bird:ethics-of-autonomous-experimentation",
 			"abel:geql",
 			"diaz:kdd2014",
@@ -525,6 +532,7 @@
 			"umass-hard2004"			
 		],
 		"tutorials":[
+			"clarke:preference-tutorial-2023",
 			"stthomas:kdd2021-tutorial",
 			"diaz:neurips-2020-tutorial",
 			"ekstrand:recsys-tutorial",

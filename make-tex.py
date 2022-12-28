@@ -94,21 +94,23 @@ def printBibliometrics(X):
     h = "h-index"
     citations = "citations"
     citationsPerArticle = "citations/article"
-    for src in ["acm","scopus","google-scholar","aminer"]:
-        header+="c"
+    for src in ["acm","scopus","google-scholar","allen","aminer"]:
+        header+="C{0.5in}"
         urls += " & "
         articles += " & "
         h += " & "
         citations += " & "
         citationsPerArticle += " & "
         if src=="acm":
-            urls += "\\href{http://dl.acm.org/author\\_page.cfm?id=%s}{\\textit{ACM Digital Library}}"%(X[src]["id"])
+            urls += "\\href{http://dl.acm.org/author\\_page.cfm?id=%s}{\\textit{{ACM DL}}}"%(X[src]["id"])
         elif src=="scopus":
-            urls += "\\href{https://www.scopus.com/authid/detail.uri?authorId=%s}{\\textit{Scopus}}"%(X[src]["id"])
+            urls += "\\href{https://www.scopus.com/authid/detail.uri?authorId=%s}{\\textit{{Scopus}}}"%(X[src]["id"])
         elif src=="google-scholar":
-            urls += "\\href{http://scholar.google.com/citations?user=%s}{\\textit{Google Scholar}}"%(X[src]["id"])
+            urls += "\\href{http://scholar.google.com/citations?user=%s}{\\textit{{Google Scholar}}}"%(X[src]["id"])
+        elif src=="allen":
+            urls += "\\href{https://www.semanticscholar.org/author/%s}{\\textit{{Semantic Scholar}}}"%(X[src]["id"])
         elif src=="aminer":
-            urls += "\\href{https://www.aminer.org/profile/%s}{\\textit{AMiner}}"%(X[src]["id"])
+            urls += "\\href{https://www.aminer.org/profile/%s}{\\textit{{AMiner}}}"%(X[src]["id"])
         articles += "%d"%X[src]["articles"]
         citations += "%d"%X[src]["citations"]
         citationsPerArticle += "%.1f"%(X[src]["citations"]/X[src]["articles"])
