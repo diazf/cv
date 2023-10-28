@@ -2,6 +2,7 @@
 
 import sys
 import json
+import argparse
 
 def printHeader():
     with open("cv-header.tex","r") as fp:
@@ -48,7 +49,17 @@ def printEmployment(X):
             e="present"
         else:
             e = "%s %d"%(x["end-month"],x["end-year"])
-        print("\\noindent\\textbf{%s}\\hfill %s\\\\\n%s\\hfill %s-%s\\\\\\\\\n%s\\\\\n"%(x["affiliation"],x["title"],x["location"],s,e,x["description"]))
+        title="\\noindent\\textbf{%s}\\hfill %s\\\\\n%s\\hfill %s-%s\\\\\n"%(x["affiliation"],x["title"],x["location"],s,e)
+        if "relocation" in x:
+            ss = "%s %d"%(x["relocation-start-month"],x["relocation-start-year"])
+            if not("relocation-end-year" in x):
+                ee="present"
+            else:
+                ee = "%s %d"%(x["relocation-end-month"],x["relocation-end-year"])
+            title+="%s\\hfill %s-%s\\\\"%(x["relocation"],ss,ee)
+        else:
+            title+=""
+        print(title+"\\\\%s\\\\\n"%(x["description"]))
     print("\n\n")
 
 def printTeaching(X):
@@ -79,12 +90,12 @@ def printSupervision(X):
             print("%s, %s, %d\\\\"%(x["name"],x["school"],x["year"]))
         print("\n\n")
 
-def printPublications(X,Y):
+def printPublications(X,Y, under_review=False):
     print("\\setlength{\\leftmargini}{0em}")
     print("\\section{Publications}")
     
     printBibliometrics(X)
-    printBibliography(Y)
+    printBibliography(Y,under_review)
     
 def printBibliometrics(X):
     print("\\noindent\\textbf{Metrics}\\\\")
@@ -125,8 +136,8 @@ def printBibliometrics(X):
     print("\\end{tabular}\n\\end{center}")
     # print("\\noindent\\begin{center}\\begin{tabular}{lccc}&\\href{http://dl.acm.org/author\\_page.cfm?id=%s}{\\textit{ACM Digital Library}}&\\href{https://www.scopus.com/authid/detail.uri?authorId=%s}{\\textit{Scopus}}&\\href{http://scholar.google.com/citations?user=%s}{\\textit{Google Scholar}}\\\\\n\\hline\narticles&&&\\\\\ncitations&&&\\\\\ncitations/article&&&\\\\\nh-index&&&\n\\end{tabular}\n\\end{center}"%(X["acm"],X["scopus"],X["google-scholar"]))
     
-def printBibliography(X):
-    if ("under-review" in X) and (len(X["under-review"]) > 0):
+def printBibliography(X,under_review=False):
+    if (under_review is True) and ("under-review" in X) and (len(X["under-review"]) > 0):
         print("\\vspace{\\baselineskip}\n\\noindent\\textbf{Under Review}\\\\")
         for x in X["under-review"]:
             print("\\begin{verse}\n\\bibentry{%s}\n\\end{verse}"%x)
@@ -235,56 +246,68 @@ def printService(X):
 def printSkills(X):
     print("\\section{Skills}\\noindent %s"%(" ".join(X)))
     print("\n\n")
-    
-with open(sys.argv[1],"r") as fp:
-    data = json.load(fp)
-    printHeader()
-    name = " ".join([data["given-name"],data["sur-name"]])
-    print("\\author{\\textcolor{BrickRed}{%s}}"%name)
-    # print("\\authoremail{%s}"%data["email"])
-    # print("\\authorwww{%s}"%data["www"])
-    print("\\newcommand{\\authoremail}[0]{%s}"%data["email"])
-    print("\\newcommand{\\authorwww}[0]{%s}"%data["www"])
-    print("\\begin{document}\n\\maketitle")
-    if "summary" in data:
-        printSummary(data["summary"])
-    if "degrees" in data:
-        printDegrees(data["degrees"])
-    if "employment" in data:
-        printEmployment(data["employment"])
-    if "academic-affiliation" in data:
-        printAcademicAffiliations(data["academic-affiliation"])
-    printPublications(data["bibliometrics"],data["bibliography"])
-    if ("teaching" in data) or ("tutorials" in data["bibliography"]):
-        print("\\section{Teaching}")
-        if ("teaching" in data):
-            printTeaching(data["teaching"])
-        printTutorials(data["bibliography"])
-    if "supervision" in data:
-        printSupervision(data["supervision"])
-    if "patents" in data:
-        printPatents(data["patents"])
-    print("\\vspace{1em}")
-    if "awards" in data:
-        printRecognition(data["awards"],data["fellowships"])
-    if "service" in data:
-        printService(data["service"])
-    if "skills" in data:
-        printSkills(data["skills"])
-    if not("references" in data):
-        print("\\section{References}\\noindent \\emph{Available on request.}")
-    print("\\bibliographystyle{plain}")
-    print("\\nobibliography{%s}\n\\end{document}"%data["bib"])
-    with open("tmp.sed","w") as sfp:
-        gs = name
-        sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(gs,name))
-        gis = ", ".join([data["given-name"][0],data["sur-name"]])        
-        sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(gis,name))
-        gis = ", ".join([data["given-name"][0]+".",data["sur-name"]])        
-        sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(gis,name))
-        sg = ", ".join([data["sur-name"],data["given-name"]])        
-        sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(sg,name))
-        sgi = ", ".join([data["sur-name"],data["given-name"][0]])        
-        sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(sgi,name))
-        sgi = ", ".join([data["sur-name"],data["given-name"][0]+"."])        
-        sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(sgi,name))
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--under_review", action=argparse.BooleanOptionalAction, help="include papers under review")
+    parser.add_argument("--references", action=argparse.BooleanOptionalAction, help="include references")
+    parser.add_argument('input', nargs='*', help='path to cv json file')
+    args = parser.parse_args()
+
+
+    with open(args.input[0],"r") as fp:
+        data = json.load(fp)
+        printHeader()
+        name = " ".join([data["given-name"],data["sur-name"]])
+        print("\\author{\\textcolor{BrickRed}{%s}}"%name)
+        # print("\\authoremail{%s}"%data["email"])
+        # print("\\authorwww{%s}"%data["www"])
+        print("\\newcommand{\\authoremail}[0]{%s}"%data["email"])
+        print("\\newcommand{\\authorwww}[0]{%s}"%data["www"])
+        print("\\begin{document}\n\\maketitle")
+        if "summary" in data:
+            printSummary(data["summary"])
+        if "degrees" in data:
+            printDegrees(data["degrees"])
+        if "employment" in data:
+            printEmployment(data["employment"])
+        if "academic-affiliation" in data:
+            printAcademicAffiliations(data["academic-affiliation"])
+        printPublications(data["bibliometrics"],data["bibliography"],args.under_review)
+        if ("teaching" in data) or ("tutorials" in data["bibliography"]):
+            print("\\section{Teaching}")
+            if ("teaching" in data):
+                printTeaching(data["teaching"])
+            printTutorials(data["bibliography"])
+        if "supervision" in data:
+            printSupervision(data["supervision"])
+        if "patents" in data:
+            printPatents(data["patents"])
+        print("\\vspace{1em}")
+        if "awards" in data:
+            printRecognition(data["awards"],data["fellowships"])
+        if "service" in data:
+            printService(data["service"])
+        if "skills" in data:
+            printSkills(data["skills"])
+        if not("references" in data):
+            print("\\section{References}\\noindent \\emph{Available on request.}")
+        print("\\bibliographystyle{plain}")
+        print("\\nobibliography{%s}\n\\end{document}"%data["bib"])
+        with open("tmp.sed","w") as sfp:
+            gs = name
+            sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(gs,name))
+            gis = ", ".join([data["given-name"][0],data["sur-name"]])        
+            sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(gis,name))
+            gis = ", ".join([data["given-name"][0]+".",data["sur-name"]])        
+            sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(gis,name))
+            sg = ", ".join([data["sur-name"],data["given-name"]])        
+            sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(sg,name))
+            sgi = ", ".join([data["sur-name"],data["given-name"][0]])        
+            sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(sgi,name))
+            sgi = ", ".join([data["sur-name"],data["given-name"][0]+"."])        
+            sfp.write("s/%s/\\\\textcolor{BrickRed}{%s}/g\n"%(sgi,name))
+
+if __name__ == "__main__":
+    main()

@@ -38,6 +38,13 @@
 	],
 	"academic-affiliation":[
 		{
+			"title":"Associate Professor",
+			"school":"Carnegie Mellon University",
+			"location":"Pittsburgh, PA",
+			"start-year":2023,
+			"start-month":"August"
+		},
+		{
 			"title":"Adjunct Professor",
 			"school":"McGill University",
 			"location":"Montréal, QC",
@@ -68,12 +75,17 @@
 			"title":"Staff Research Scientist",
 			"affiliation":"Google Research",
 			"location":"Montréal, QC",
+			"relocation":"Pittsburgh, PA",
 			"start-year":2020,
 			"start-month":"September",
+			"end-year":2023,
+			"end-month":"March",
+			"relocation-start-year":2023,
+			"relocation-start-month":"April",
 			"description":"I conduct core research in the evaluation and design of search and recommendation systems, including fairness, accountability, transparency, and ethics of production systems.  Outside of my core responsibilities, I continue to grow a multidisciplinary research program around the broader impacts of music creation, recommendation, consumption, and their longer terms effects."
 		},		
 		{
-			"title":"Assistant Research Director",
+			"title":"Senior Principal Research Manager, Assistant Research Director",
 			"affiliation":"Microsoft Research",
 			"location":"Montréal, QC",
 			"start-year":2018,
@@ -396,33 +408,33 @@
 	"bibliometrics":{
 		"acm":{
 			"id":"81551748956",
-			"articles":84,
-			"citations":2644,
-			"h":25
+			"articles":91,
+			"citations":2973,
+			"h":27
 		},
 		"scopus":{
 			"id":"55605195900",
-			"articles":95,
-			"citations":4177,
-			"h":32
+			"articles":101,
+			"citations":4778,
+			"h":33
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":123,
-			"citations":8618,
-			"h":44
+			"articles":131,
+			"citations":9788,
+			"h":47
 		},
 		"aminer":{
 			"id":"5606955945cedb33968d9813",
-			"articles":129,
-			"citations":6503,
-			"h":40
+			"articles":170,
+			"citations":9114,
+			"h":44
 		},
 		"allen":{
 			"id":"Fernando-Diaz/145472333",
-			"articles":138,
-			"citations":7293,
-			"h":42
+			"articles":146,
+			"citations":7814,
+			"h":44
 		}
 	},
 	"bibliography":{
@@ -454,6 +466,11 @@
 			"fdiaz:temporal-journal"			
 		],
 		"under-review":[
+			"arabzadeh:offline-tti-evaluation",
+			"vardasbi:group-membership-bias",
+			"ferraro:commonality-tors",
+			"ekstrand:distributions-tors",
+			"diaz:lexirecall"
 		],
 		"conference-papers":[
 			"ferraro:commonality",
@@ -520,6 +537,7 @@
 			"diaz:wearables"			
 		],
 		"workshop-papers":[
+			"diaz:lexiprecision",
 			"rolf:data-externalities",
 			"bird:ethics-of-autonomous-experimentation",
 			"abel:geql",
@@ -620,6 +638,16 @@
 				"venue":"SIGIR",
 				"title":"General Co-Chair",
 				"year":[2021]
+			},
+			{
+				"venue":"SIGIR Workshop on Retrieval-Enhanced Machine Learning",
+				"title":"Co-Organizer",
+				"year":[2023]
+			},
+			{
+				"venue":"TREC Tip of the Tongue Track",
+				"title":"Co-Organizer",
+				"year":[2023]
 			},
 			{
 				"venue":"TREC Fair Ranking Track",
