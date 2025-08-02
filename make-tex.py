@@ -77,6 +77,16 @@ def printTutorials(X):
 
 def printSupervision(X):
     print("\\section{Supervision}")
+    if "current-students" in X:
+        print("\\noindent\\textbf{Current Students}\\\\")
+        sortedInterns = sorted(X["current-students"],key=lambda x: x["name"])
+        for x in sortedInterns:
+            if "co" in x:
+                co = x["co"]
+                print("%s, %s\\\\"%(x["name"],f"with {co}"))
+            else:
+                print("%s\\\\"%(x["name"]))
+        print("\n\n")
     if "interns" in X:
         print("\\noindent\\textbf{Former Interns}\\\\")
         sortedInterns = sorted(X["interns"],key=lambda x: x["year"], reverse=True)
@@ -105,7 +115,7 @@ def printBibliometrics(X):
     h = "h-index"
     citations = "citations"
     citationsPerArticle = "citations/article"
-    for src in ["acm","scopus","google-scholar","allen","aminer"]:
+    for src in ["acm","scopus","google-scholar","allen"]:
         header+="C{0.5in}"
         urls += " & "
         articles += " & "

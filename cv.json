@@ -72,6 +72,14 @@
 	],
 	"employment":[
 		{
+			"title":"Associate Professor",
+			"affiliation":"Carnegie Mellon University",
+			"location":"Pittsburgh, PA",
+			"start-year":2023,
+			"start-month":"September",
+			"description":"I am an Associate Professor with tenure in the Language Technologies Institute (LTI) with current research covering three themes: quantitatively evaluating AI systems, retrieval-enhanced AI, and understanding the cultural impact of AI in domains like music and literature through interdisciplinary collaborations.  Teaching includes development of a new course on quantitative evaluation of language technologies."
+		},		
+		{
 			"title":"Staff Research Scientist",
 			"affiliation":"Google Research",
 			"location":"Montréal, QC",
@@ -187,6 +195,12 @@
 	],
 	"teaching":[
 		{
+			"title":"Quantitative Evaluation of Language Technologies",
+			"school":"Carnegie Mellon University (Language Technologies Institute)",
+			"semesters":["2024"],
+			"description":"Graduate level course on measurement and experimentation of language technologies in offline and online environments.  Prepared all material, lectures, and homeworks."
+		},
+		{
 			"title":"Web Search Engines",
 			"school":"New York University (Courant)",
 			"semesters":["2013-2016"],
@@ -230,6 +244,40 @@
 		}
 	],
 	"supervision":{
+		"current-students":[
+			{
+				"name":"Shaily Bhatt",
+				"year":[
+					2023
+				]
+			},
+			{
+				"name":"Athiya Deviyani",
+				"year":[
+					2023
+				]
+			},
+			{
+				"name":"Alfredo Gomez",
+				"year":[
+					2023
+				],
+				"co": "Mona Diab"
+			},
+			{
+				"name":"Jessica Huynh",
+				"year":[
+					2023
+				],
+				"co": "Jeffrey Bigham"
+			},
+			{
+				"name":"Danny To Eun Kim",
+				"year":[
+					2023
+				]
+			}
+		],
 		"interns":[
 			{
 				"name":"Jaime Arguello",
@@ -408,33 +456,33 @@
 	"bibliometrics":{
 		"acm":{
 			"id":"81551748956",
-			"articles":91,
-			"citations":2973,
-			"h":27
+			"articles":102,
+			"citations":3590,
+			"h":31
 		},
 		"scopus":{
 			"id":"55605195900",
-			"articles":101,
-			"citations":4778,
-			"h":33
+			"articles":117,
+			"citations":6190,
+			"h":40
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":131,
-			"citations":9788,
-			"h":47
+			"articles":188,
+			"citations":12511,
+			"h":54
 		},
 		"aminer":{
 			"id":"5606955945cedb33968d9813",
-			"articles":170,
-			"citations":9114,
-			"h":44
+			"articles":305,
+			"citations":11763,
+			"h":51
 		},
 		"allen":{
 			"id":"Fernando-Diaz/145472333",
-			"articles":146,
-			"citations":7814,
-			"h":44
+			"articles":141,
+			"citations":8800,
+			"h":45
 		}
 	},
 	"bibliography":{
@@ -448,6 +496,9 @@
 			"diaz:vertical-chapter"
 		],
 		"journal-articles":[
+			"diaz:lexirecall",
+			"ferraro:commonality-tors",
+			"ekstrand:distributions-tors",
 			"wu:fairmoop",
 			"baym:music-metrics",
 			"born:cifar",
@@ -466,13 +517,18 @@
 			"fdiaz:temporal-journal"			
 		],
 		"under-review":[
-			"arabzadeh:offline-tti-evaluation",
-			"vardasbi:group-membership-bias",
-			"ferraro:commonality-tors",
-			"ekstrand:distributions-tors",
-			"diaz:lexirecall"
 		],
 		"conference-papers":[
+			"kim2024towards",
+			"he:tot-simulation",
+			"deviyani:contextual-evaluation",
+			"bhatt:eecc",
+			"diaz:pessimistic-evaluation",
+			"arabzadeh:tti-eval",
+			"wu:density",
+			"diaz:scaling-doesnt-scale",
+			"vardasbi:group-membership-bias",
+			"wilcox:consent-futures",
 			"ferraro:commonality",
 			"diaz:rpp",
 			"zamani:reml",
@@ -550,6 +606,7 @@
 			"umass-hard2004"			
 		],
 		"tutorials":[
+			"diaz:reml-tutorial",
 			"clarke:preference-tutorial-2023",
 			"stthomas:kdd2021-tutorial",
 			"diaz:neurips-2020-tutorial",
@@ -577,6 +634,14 @@
 		]
 	},
 	"awards":[
+		{
+			"title": "SIGIR Academy",
+			"year": 2024
+		},
+		{
+			"title":"CSCW Honorable Mention",
+			"year":2023
+		},
 		{
 			"title":"CIKM Best Paper Nomination",
 			"year":2020
@@ -635,6 +700,11 @@
 	"service":{
 		"organizational leadership":[
 			{
+				"venue":"Dagstuhl Seminar: Towards a Multidisciplinary Vision for Culturally Inclusive Generative AI",
+				"title":"Co-Organizer",
+				"year":[2025]
+			},
+			{
 				"venue":"SIGIR",
 				"title":"General Co-Chair",
 				"year":[2021]
@@ -647,7 +717,7 @@
 			{
 				"venue":"TREC Tip of the Tongue Track",
 				"title":"Co-Organizer",
-				"year":[2023]
+				"year":[2023,2024]
 			},
 			{
 				"venue":"TREC Fair Ranking Track",
