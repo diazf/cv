@@ -4,7 +4,7 @@
 	"email":"diazf@acm.org",
 	"www":"http://841.io",
 	"bib":"fdiaz",
-	"summary":"I conduct and lead interdisciplinary research on the design and evaluation of search engines and recommender systems, including their relationship to fairness, accountability, transparency, and ethics (FATE).",
+	"summary":"I conduct and lead interdisciplinary research on the design and evaluation of artificial intelligence—especially retrieval-enhanced systems—using quantitative, qualitative, and mixed methods, examining not only their technical performance but also their cultural impacts and societal consequences.",
 	"degrees":[
 		{
 			"degree":"PhD",
@@ -100,7 +100,7 @@
 			"start-month":"June",
 			"end-year":2020,
 			"end-month":"July",
-			"description":"I assisted with the management of twenty five researchers focused on natural language processing, machine learning, and the societal impacts of artificial intelligence.  I directly led a multidisciplinary research group focused on fairness, accountability, transparency, and ethics (FATE) of artificial intelligence systems.  The group externally published basic research and actively collaborated with engineering teams in Microsoft.  In addition, I maintained an active research agenda in core information retrieval and its application to production systems such as bing.  Moreover, I started a research program around the broader impacts of music creation, recommendation, consumption, and their longer terms effects."
+			"description":"I directly led a multidisciplinary research group focused on fairness, accountability, transparency, and ethics (FATE) of artificial intelligence systems.  The group externally published basic research and actively collaborated with engineering teams in Microsoft.  In addition, I maintained an active research agenda in core information retrieval and its application to production systems such as bing.  Moreover, I started a research program around the broader impacts of music creation, recommendation, consumption, and their longer terms effects. As assistant research director, I supported the management of twenty five researchers focused on natural language processing, machine learning, and the societal impacts of artificial intelligence.  "
 		},		
 		{
 			"title":"Director of Research",
@@ -110,7 +110,7 @@
 			"start-month":"March",
 			"end-year":2018,
 			"end-month":"May",
-			"description":"I led the applied research organization of twenty researchers focused on search, recommendation, metrics, and evaluation.  I helped define the company's research approach and culture, including how it interacted internally with product teams and externally with the academic community.  In addition, I was an active member of the recommendations leadership team, involved in strategic planning for a two year product road map."
+			"description":"I built and led the research organization of twenty researchers focused on search, recommendation, metrics, and evaluation.  I helped define the company's research approach and culture, including how it interacted internally with product teams and externally with the academic community.  In addition, I was an active member of the recommendations leadership team, involved in strategic planning for a two year product road map."
 		},		
 		{
 			"title":"Senior Researcher",
@@ -272,7 +272,7 @@
 				"co": "Jeffrey Bigham"
 			},
 			{
-				"name":"Danny To Eun Kim",
+				"name":"To Eun Kim",
 				"year":[
 					2023
 				]
@@ -450,27 +450,42 @@
 				"name":"Rodrigo Nogueira",
 				"year":2019,
 				"school":"New York University"
+			},			
+			{
+				"name":"Till Kletti",
+				"year":2023,
+				"school":"Université Grenoble Alpes"
+			},	
+			{
+				"name":"James Route",
+				"year":2025,
+				"school":"Carnegie Mellon University"
+			},			
+			{
+				"name":"Jiatong Shi",
+				"year":2025,
+				"school":"Carnegie Mellon University"
 			}
 		]
 	},
 	"bibliometrics":{
 		"acm":{
 			"id":"81551748956",
-			"articles":102,
-			"citations":3590,
-			"h":31
+			"articles":104,
+			"citations":3785,
+			"h":33
 		},
 		"scopus":{
 			"id":"55605195900",
-			"articles":117,
-			"citations":6190,
-			"h":40
+			"articles":120,
+			"citations":6519,
+			"h":42
 		},
 		"google-scholar":{
 			"id":"212SLn0AAAAJ",
-			"articles":188,
-			"citations":12511,
-			"h":54
+			"articles":190,
+			"citations":13016,
+			"h":55
 		},
 		"aminer":{
 			"id":"5606955945cedb33968d9813",
@@ -481,7 +496,7 @@
 		"allen":{
 			"id":"Fernando-Diaz/145472333",
 			"articles":141,
-			"citations":8800,
+			"citations":9137,
 			"h":45
 		}
 	},
@@ -496,6 +511,7 @@
 			"diaz:vertical-chapter"
 		],
 		"journal-articles":[
+			"dagstuhl:ai-culture",
 			"diaz:lexirecall",
 			"ferraro:commonality-tors",
 			"ekstrand:distributions-tors",
@@ -519,6 +535,10 @@
 		"under-review":[
 		],
 		"conference-papers":[
+			"naini:ranklist",
+			"takehi:wsdm2026",
+			"olteanu:rigor",
+			"kalra:mor",
 			"kim2024towards",
 			"he:tot-simulation",
 			"deviyani:contextual-evaluation",

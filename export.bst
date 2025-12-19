@@ -365,7 +365,8 @@ FUNCTION{entry.export.standard}
   "number" number field.export
   "school" school field.export
   "type" type field.export
-  "title" title field.export
+  % "title" title field.export
+  "title" "{" title * "}" * field.export
   "volume" volume field.export
   "year" year field.export
 }

@@ -278,13 +278,13 @@ def main():
         print("\\begin{document}\n\\maketitle")
         if "summary" in data:
             printSummary(data["summary"])
-        if "degrees" in data:
-            printDegrees(data["degrees"])
         if "employment" in data:
             printEmployment(data["employment"])
         if "academic-affiliation" in data:
             printAcademicAffiliations(data["academic-affiliation"])
         printPublications(data["bibliometrics"],data["bibliography"],args.under_review)
+        if "degrees" in data:
+            printDegrees(data["degrees"])
         if ("teaching" in data) or ("tutorials" in data["bibliography"]):
             print("\\section{Teaching}")
             if ("teaching" in data):
